@@ -1,13 +1,13 @@
 {
-  "name": "cypress-ct-atomico",
-  "version": "0.0.0",
-  "description": "",
-  "type": "module",
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "exports": {
-    "node": "./definition.js",
-    "default": "./index.mjs"
-  }
+    "name": "cypress-ct-atomico",
+    "version": "0.0.0",
+    "description": "",
+    "type": "module",
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "exports": {
+        "node": "./definition.js",
+        "default": "./index.mjs"
+    }
 }
