@@ -7,7 +7,10 @@
     "author": "",
     "license": "ISC",
     "exports": {
-        "node": "./definition.js",
-        "default": "./index.mjs"
+        "node": "./definition.cjs",
+        "default": "./index.js"
+    },
+    "dependencies": {
+        "@cypress/mount-utils": "^4.0.0"
     }
 }

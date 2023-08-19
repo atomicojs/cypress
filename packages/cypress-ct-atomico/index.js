@@ -1,12 +1,14 @@
 import { getContainerEl, setupHooks } from "@cypress/mount-utils";
-import { render } from "atomico";
+import { createElement, render } from "atomico";
 
-let dispose = () => {};
+/**
+ * @type {()=>void}
+ */
+let dispose;
 
 function cleanup() {
     dispose?.();
 }
-
 /**
  *
  * @param {*} component
@@ -18,7 +20,14 @@ export function mount(component, options = {}) {
     const root = getContainerEl();
 
     // Render component with your library's relevant
-    dispose = render(component, root);
+    render(
+        createElement("host", {
+            children: component,
+        }),
+        root
+    );
+
+    dispose = () => render(createElement("host"), root);
 
     return cy.wait(0, { log: false }).then(() => {
         if (options.log !== false) {
