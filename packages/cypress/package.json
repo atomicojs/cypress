@@ -7,7 +7,7 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "cypress-ct-atomico": "latest"
+        "cypress-ct-atomico": "*"
     },
     "publishConfig": {
         "access": "public"

@@ -13,5 +13,8 @@
         "tabWidth": 4,
         "endOfLine": "lf",
         "singleQuote": false
-    }
+    },
+    "workspaces": [
+        "./packages/*"
+    ]
 }
